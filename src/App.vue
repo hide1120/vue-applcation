@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+    <Header />
     <router-view/>
+    <Pagetop />
   </div>
 </template>
-
+<script>
+import Header from '@/components/Header';
+import Pagetop from '@/components/Pagetop';
+export default {
+  components:{
+    Header,
+    Pagetop
+  }
+}
+</script>
 <style lang="stylus">
 #app
   font-family "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro","メイリオ", "Meiryo", "ＭＳ Ｐゴシック", sans-serif;
@@ -16,4 +23,5 @@
   text-align center
   color #2c3e50
   margin-top 60px
+
 </style>
