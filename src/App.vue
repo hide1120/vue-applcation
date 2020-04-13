@@ -23,5 +23,7 @@ export default {
   text-align center
   color #2c3e50
   margin-top 60px
-
+.router-link-exact-active
+  text-decoration underline
+  color #000
 </style>

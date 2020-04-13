@@ -1,5 +1,5 @@
 <template>
-  <div class="msg">topのみ</div>
+  <p>topのみ</p>
 </template>
 
 <script>
@@ -13,6 +13,5 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
-.msg
-  color #fff
+
 </style>
