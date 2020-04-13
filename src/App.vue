@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
+  <div id="app" style="height: 5000px" v-cloak>
     <Header />
     <router-view/>
-    <Pagetop />
+    <Pagetop></Pagetop>
   </div>
 </template>
 <script>
