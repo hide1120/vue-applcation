@@ -1,5 +1,5 @@
 <template>
-  <h1>【h1】topのみ</h1>
+  <p>【p】top以外</p>
 </template>
 
 <script>
