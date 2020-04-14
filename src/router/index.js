@@ -3,6 +3,8 @@ import BootstrapVue from 'bootstrap-vue' // Bootstrap
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
+import Company from '../views/Company.vue'
+import NotFound from '../views/NotFound.vue' //Not Found
 
 Vue.use(VueRouter)
 Vue.use(BootstrapVue) // Bootstrap
@@ -20,10 +22,16 @@ import 'bootstrap-vue/dist/bootstrap-vue.css' // Bootstrap
     path: '/about',
     name: 'About',
     component: About
-   // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    //component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/company',
+    name: 'Company',
+    component: Company
+    },
+  // Not Found
+  {
+    path: '*',
+    component: NotFound
   }
 ]
 
