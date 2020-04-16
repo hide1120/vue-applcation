@@ -14,9 +14,6 @@ export default {
       scY: 0,
     }
   },
-  mounted(){
-    window.addEventListener('scroll', this.handleScroll);
-  },
   methods:{
     handleScroll: function () {
       if(this.scTimer) return;
@@ -29,9 +26,12 @@ export default {
     toTop: function () {
       window.scrollTo({
         top: 0,
-        behavior: "auto"
+        behavior: "smooth"
       });
     }
+  },
+  mounted(){
+    window.addEventListener('scroll', this.handleScroll);
   }
 }
 </script>
@@ -39,6 +39,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
 .fixed
+  cursor pointer
+  transition .3s all
   position fixed
 .bottom-0
   bottom 0
