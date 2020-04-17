@@ -1,5 +1,5 @@
 <template>
-  <p>【p】top以外</p>
+  <p><router-link to="/">【p】top以外</router-link></p>
 </template>
 
 <script>

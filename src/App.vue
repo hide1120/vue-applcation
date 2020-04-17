@@ -1,9 +1,11 @@
 <template>
   <div id="app" v-cloak style="height: 5000px">
+
     <Header />
     <router-view/>
     <Pagetop />
   </div>
+
 </template>
 <script>
 import Header from '@/components/Header';

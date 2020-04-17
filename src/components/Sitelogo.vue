@@ -1,5 +1,5 @@
 <template>
-  <h1>【h1】topのみ</h1>
+  <h1><router-link to="/">【h1】topのみ</router-link></h1>
 </template>
 
 <script>
