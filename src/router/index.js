@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Company from '../views/Company.vue'
+import Default from '../views/Default.vue'
 import NotFound from '../views/NotFound.vue' //Not Found
 
 Vue.use(VueRouter)
@@ -22,11 +23,16 @@ import 'bootstrap-vue/dist/bootstrap-vue.css' // Bootstrap
     path: '/about',
     name: 'About',
     component: About
-  },
-  {
-    path: '/company',
-    name: 'Company',
-    component: Company
+    },
+    {
+      path: '/company',
+      name: 'Company',
+      component: Company
+    },
+    {
+      path: '/default',
+      name: 'Default',
+      component: Default
     },
   // Not Found
   {

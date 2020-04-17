@@ -10,6 +10,9 @@
 <li class="nav-item">
 <router-link to="/company" class="nav-link">Company</router-link>
 </li>
+<li class="nav-item">
+<router-link to="/default" class="nav-link">Default</router-link>
+</li>
 </ul>
 </div>
 </template>
