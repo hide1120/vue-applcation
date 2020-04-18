@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h1>This is an default page</h1>
+    <h1>AKTIO グループ</h1>
   </div>
 </template>

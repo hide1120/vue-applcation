@@ -2,9 +2,8 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue' // Bootstrap
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import About from '../views/About.vue'
 import Company from '../views/Company.vue'
-import Default from '../views/Default.vue'
+import Group from '../views/Group.vue'
 import NotFound from '../views/NotFound.vue' //Not Found
 
 Vue.use(VueRouter)
@@ -18,11 +17,6 @@ import 'bootstrap-vue/dist/bootstrap-vue.css' // Bootstrap
     path: '/',
     name: 'Home',
     component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: About
     },
     {
       path: '/company',
@@ -30,9 +24,9 @@ import 'bootstrap-vue/dist/bootstrap-vue.css' // Bootstrap
       component: Company
     },
     {
-      path: '/default',
-      name: 'Default',
-      component: Default
+      path: '/group',
+      name: 'Group',
+      component: Group
     },
   // Not Found
   {
